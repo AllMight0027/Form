@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Personal Details</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap:700" rel="stylesheet">
+    </head>
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+    </style>
+    
+    <body style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c41c49e-e4a2-4377-97c2-902ecf2a9570/d2uekvx-61ea99a1-bd3c-4958-8302-99d58b1c9422.jpg/v1/fill/w_800,h_1039,q_75,strp/sky_paper_texture_by_maplerose_stock_d2uekvx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAzOSIsInBhdGgiOiJcL2ZcLzljNDFjNDllLWU0YTItNDM3Ny05N2MyLTkwMmVjZjJhOTU3MFwvZDJ1ZWt2eC02MWVhOTlhMS1iZDNjLTQ5NTgtODMwMi05OWQ1OGIxYzk0MjIuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CyW_tt40jd_8ArmzNlmkBbte0qPeCFEj0Blxnl3GCLY);background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+        <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-12 col-md-3"  >
+                    <form id="form">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email"><br><br>
+                        <label for="phn">Phone No.:</label><br>
+                        <input type="number" id="phn"><br><br>
+                        <label for="gender">Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male" checked="checked">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br>
+                        <label for="age">Age:</label><br>
+                        <input type="number" id="age"><br><br>
+                        <!-- <input type="reset"><br><br> -->
+                        
+                      </form>
+                      <button onclick="submit()">Add</button>
+                      <button onclick="res()" id="res">Reset</button>
+                </div>
+                <div class="col-sm-12 col-md-9">
+                    <table border=1 >
+                        <tbody id="mtab">
+                            <tr><td><h4>Name  &nbsp;&nbsp;&nbsp;&nbsp;</h4></td><td><h4>E-mail &nbsp;&nbsp;&nbsp;&nbsp;</h4></td><td><h4>Phone No. &nbsp;&nbsp;&nbsp;&nbsp;</h4></td><td><h4>Gender&nbsp;</h4></td><td><h4>Age&nbsp;</h4></td></tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="form.js"></script>
+</html>
